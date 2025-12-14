@@ -7,7 +7,7 @@ export default function Hero({
   actions,
 }) {
   return (
-    <div className="container mx-auto px-4 py-20 max-w-5xl text-white backdrop-blur-xl shadow-black rounded-2xl">
+    <div className="container mx-auto px-4 py-10 md:py-16 max-w-5xl text-white backdrop-blur-xl shadow-black rounded-2xl">
       <h1 className="text-5xl font-bold">
         {name}
       </h1>

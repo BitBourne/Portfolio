@@ -17,7 +17,7 @@ function PageTesting() {
 
     <button
       onClick={() => navigate(-1)} // -1 regresa a la página anterior
-      className="px-4 pt-20 text-white rounded cursor-pointer"
+      className="px-4 mt-20 text-white rounded cursor-pointer"
     >
       ← Volver
     </button>
