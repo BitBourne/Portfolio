@@ -20,7 +20,7 @@ export default function TechnicalSkills({
 
               <div className="flex flex-wrap gap-2">
                 {group.items.map(item => (
-                  <Badge key={item} variant="secondary" className="rounded-2xl border-2 border-gray-700">
+                  <Badge key={item} variant="secondary" className="rounded-2xl border-2 bg-gray-800 border-gray-700">
                     {item}
                   </Badge>
                 ))}

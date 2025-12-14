@@ -31,7 +31,7 @@ const LayoutHome = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="gap-2 flex items-center text-lg" onClick={handleCopy}>
+            <Button size="lg" className="gap-2 flex items-center text-lg border-gray-500 border-2 cursor-pointer" onClick={handleCopy}>
               <Mail className="h-4 w-4" />
               {copied ? "¡Copiado!" : email}
             </Button>

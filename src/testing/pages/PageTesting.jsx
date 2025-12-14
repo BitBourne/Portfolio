@@ -40,25 +40,8 @@ function PageTesting() {
         },
       },
       ]}
-      skills={[
-        {
-          title: "Automatización",
-          items: ["Selenium", "Cypress", "Playwright", "Jest", "Appium"],
-        },
-        {
-          title: "Testing & QA",
-          items: ["Test Planning", "API Testing", "Postman", "JMeter", "BDD/TDD"],
-        },
-        {
-          title: "Tools & CI/CD",
-          items: ["Jira", "TestRail", "Jenkins", "Git", "SQL"],
-        },
-      ]}
     />
       </section>
-      
-      
-
 
       {/* TESTING */}
       <section className="container mx-auto px-4 pb-20 max-w-6xl">
