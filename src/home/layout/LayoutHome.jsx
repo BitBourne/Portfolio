@@ -25,7 +25,7 @@ const LayoutHome = () => {
       {/* Contact Section */}
       <section id="contact" className="bg-secondary/30 py-16 text-white">
         <div className="container mx-auto px-4 max-w-5xl text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">¿Hablamos?</h2>
+          {/* <h2 className="text-2xl md:text-3xl font-bold mb-4">¿Hablamos?</h2> */}
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto text-pretty">
             Estoy abierto a nuevas oportunidades y colaboraciones. No dudes en contactarme.
           </p>
