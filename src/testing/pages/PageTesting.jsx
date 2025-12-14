@@ -26,7 +26,7 @@ function PageTesting() {
       {/* HERO */}
       <section className="flex items-center justify-center">
        <Hero
-      name="Mauricio Coronado"
+      name="Mauricio Martinez"
       role="QA Engineer / Test Automation Specialist"
       description="QA Engineer con experiencia en testing manual y automatizado, enfocado en calidad, automatización y mejora continua."
       actions={[

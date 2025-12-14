@@ -43,7 +43,7 @@ const LayoutHome = () => {
       <footer className="border-t py-8 text-white">
         <div className="container mx-auto px-4 max-w-5xl">
           <p className="text-center text-sm text-muted-foreground">
-            © 2025 Mauricio Coronado. Todos los derechos reservados.
+            © 2025 Mauricio Martinez. Todos los derechos reservados.
           </p>
         </div>
       </footer>

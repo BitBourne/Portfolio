@@ -2,7 +2,7 @@ export default function HomeHeader() {
   return (
     <div className="text-center mt-16 md:mt-8 mb-20 md:mb-12 text-white">
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-        Ing. Mauricio Coronado
+        Ing. Mauricio Martinez
       </h1>
       <p className="text-lg text-muted-foreground">
         Tester QA | Desarrollador | Ciberseguridad
