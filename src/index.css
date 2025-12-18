@@ -1,5 +1,102 @@
 @import "tailwindcss";
 
+/* =========================
+   RESET + BASE
+   ========================= */
+html,
 body {
-  background-color: #121212;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow-x: hidden;
+}
+
+/* React root SIEMPRE visible */
+#root {
+  position: relative;
+  z-index: 1;
+  min-height: 100svh;
+  /* mobile safe viewport */
+}
+
+/* =========================
+   ANIMACIÓN RESPONSIVA
+   ========================= */
+@keyframes starsMove {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-100vh);
+  }
+}
+
+/* =========================
+   BASE COMÚN ESTRELLAS
+   ========================= */
+#stars,
+#stars2,
+#stars3 {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  background-repeat: repeat;
+}
+
+/* =========================
+   CAPA 1 – estrellas pequeñas
+   ========================= */
+#stars {
+  background-image: radial-gradient(1px 1px at 20px 30px, #fff, transparent),
+    radial-gradient(1px 1px at 40px 70px, #fff, transparent),
+    radial-gradient(1px 1px at 130px 90px, #fff, transparent),
+    radial-gradient(1px 1px at 200px 40px, #fff, transparent);
+  background-size: 250px 250px;
+  animation: starsMove 60s linear infinite;
+}
+
+/* =========================
+   CAPA 2 – estrellas medianas
+   ========================= */
+#stars2 {
+  background-image: radial-gradient(2px 2px at 50px 80px, #fff, transparent),
+    radial-gradient(2px 2px at 120px 150px, #fff, transparent),
+    radial-gradient(2px 2px at 180px 60px, #fff, transparent);
+  background-size: 400px 400px;
+  animation: starsMove 120s linear infinite;
+}
+
+/* =========================
+   CAPA 3 – estrellas grandes
+   ========================= */
+#stars3 {
+  background-image: radial-gradient(3px 3px at 90px 120px, #fff, transparent),
+    radial-gradient(3px 3px at 200px 200px, #fff, transparent);
+  background-size: 600px 600px;
+  animation: starsMove 180s linear infinite;
+}
+
+/* =========================
+   UTILIDAD OPCIONAL
+   ========================= */
+.animate-fade-slide {
+  animation: fadeSlide 1s ease-out forwards;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

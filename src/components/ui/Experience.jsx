@@ -1,39 +1,44 @@
-export default function Experience({
-  title = "Experiencia",
-  items = [],
-}) {
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import AnimateSection from "@/hooks/animationInView"
+
+export default function Experience({ title, company, period, bullets, tags = [] }) {
+
+
   return (
-    <section className="bg-secondary/30 py-16">
-      <div className="container mx-auto px-4 max-w-5xl">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8">
-          {title}
-        </h2>
-
-        <div className="space-y-8">
-          {items.map((item, index) => (
-            <div key={index} className="space-y-2">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2">
-                <div>
-                  <h3 className="text-xl font-semibold">
-                    {item.role}
-                  </h3>
-                  <p className="text-primary font-medium">
-                    {item.company}
-                  </p>
-                </div>
-
-                <p className="text-sm text-muted-foreground">
-                  {item.period}
-                </p>
+    <section className="container mx-auto">
+      <AnimateSection>
+        <Card className=" backdrop-blur-xl rounded-2xl border-2 border-gray-600">
+          < CardHeader >
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+              <div>
+                <CardTitle className="text-xl">{title}</CardTitle>
+                <CardDescription>
+                  {company} · {period}
+                </CardDescription>
               </div>
 
-              <p className="text-muted-foreground leading-relaxed">
-                {item.description}
-              </p>
+              {tags.length > 0 && (
+                <div className="flex flex-wrap gap-2">
+                  {tags.map((tag, i) => (
+                    <Badge key={i} variant="secondary">
+                      {tag}
+                    </Badge>
+                  ))}
+                </div>
+              )}
             </div>
-          ))}
-        </div>
-      </div>
+          </CardHeader >
+
+          <CardContent>
+            <ul className="list-disc list-inside text-muted-foreground space-y-2">
+              {bullets.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          </CardContent>
+        </Card >
+      </AnimateSection>
     </section>
   )
 }

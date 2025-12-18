@@ -8,7 +8,8 @@ export default function HomePage() {
       <div className="w-full max-w-6xl">
         <HomeHeader />
 
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-center md:justify-around gap-6 mt-8">
+
           <ProfileCard
             icon={Bug}
             title="QA"
@@ -22,19 +23,19 @@ export default function HomePage() {
             icon={Code}
             title="Desarrollador"
             description="Desarrollo full-stack y arquitectura"
-            tags={["React", "Node.js", "TypeScript"]}
+            tags={["JavaScript"]}
             to="/dev"
             color="bg-blue-500/10 text-blue-500"
           />
 
-          <ProfileCard
+          {/* <ProfileCard
             icon={Shield}
             title="Ciberseguridad"
             description="Pentesting y protección de sistemas"
             tags={["Pentesting", "OWASP", "Kali"]}
             to="/cybersecurity"
             color="bg-red-500/10 text-red-500"
-          />
+          /> */}
         </div>
       </div>
     </div>
