@@ -14,7 +14,7 @@ export default function StackCard({ title, stacks }) {
                             <h4 className="mb-4 font-semibold text-lg">{stack.label}</h4>
                             <div className="flex flex-wrap gap-2 justify-center max-w-[250px]">
                                 {stack.items.map((item) => (
-                                    <Badge key={item} className="rounded-2xl border-2 bg-gray-700 text-white">{item}</Badge>
+                                    <Badge key={item} className="rounded-2xl border-2 bg-gray-700 text-gray-200">{item}</Badge>
                                 ))}
                             </div>
                         </div>

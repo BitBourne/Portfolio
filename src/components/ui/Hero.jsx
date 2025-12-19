@@ -11,7 +11,7 @@ export default function Hero({
       <h1 className="text-5xl font-bold">
         {Title}
       </h1>
-      <p className="text-muted-foreground max-w-2xl mx-auto">
+      <p className="text-muted-foreground max-w-2xl mx-auto text-gray-200">
         {Subtitle}
       </p>
     </div>

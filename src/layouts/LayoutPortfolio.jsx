@@ -2,7 +2,6 @@ import { Outlet, useNavigate, NavLink } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
 import { Mail, Github, Linkedin } from "lucide-react"
-import ScrollIndicator from "@/components/ui/scrollIndicator"
 import ScrollToTop from "@/components/ui/scrollTop"
 import { useAnimationInView } from "@/hooks/animationInView"
 
@@ -24,7 +23,13 @@ export default function LayoutPortfolio() {
             <ScrollToTop />
 
             {/* Header común */}
-            <header className="border-b border-border bg-background/80 backdrop-blur sticky top-0 z-10 mt-8 ">
+            <header className="
+  fixed left-0 w-full
+  z-50
+  border-b border-border
+  bg-background/80 backdrop-blur
+">
+
                 <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center ">
                     <button
                         onClick={() => navigate("/")}
@@ -69,9 +74,8 @@ export default function LayoutPortfolio() {
             </header>
 
             {/* Contenido dinámico */}
-            <main className="max-w-7xl mx-auto px-4 py-12 ">
+            <main className="max-w-7xl mx-auto pt-24 ">
                 <Outlet />
-                <ScrollIndicator />
                 {/* Contact Section */}
                 <section id="contact" className="bg-secondary/30 py-16 text-white">
                     <div className="container mx-auto px-4 max-w-5xl text-center">
@@ -98,6 +102,6 @@ export default function LayoutPortfolio() {
                     </div>
                 </footer>
             </main>
-        </div>
+        </div >
     )
 }

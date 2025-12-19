@@ -35,7 +35,7 @@ export default function Projects({ projects }) {
                     )}
                   </div>
 
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                  <p className="text-muted-foreground mb-4 leading-relaxed text-gray-300">
                     {project.description}
                   </p>
 
@@ -43,7 +43,7 @@ export default function Projects({ projects }) {
                     {project.tags.map((tag, i) => (
                       <Badge
                         key={i}
-                        className="rounded-2xl border border-slate-600 bg-slate-700"
+                        className="rounded-2xl border border-slate-600 bg-slate-700 text-gray-200"
                       >
                         {tag}
                       </Badge>

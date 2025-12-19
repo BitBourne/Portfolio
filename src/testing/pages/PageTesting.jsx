@@ -17,7 +17,7 @@ function PageTesting() {
       <section className="text-center m-4 md:m-12 mb-10 md:mb-20">
         <Hero
           Title="Automation, Testing & Pentesting"
-          Subtitle="QA Engineer con experiencia en testing manual y automatizado, enfocado en calidad, automatización y mejora continua."
+          Subtitle="Ingeniero QA con experiencia en testing manual y automatizado, enfocado en calidad, automatización y mejora continua."
         />
       </section>
 
@@ -75,7 +75,7 @@ function PageTesting() {
 
 
 
-      <section className="m-4 md:m-12 mb-10 md:mb-20">
+      {/* <section className="m-4 md:m-12 mb-10 md:mb-20">
         <Projects
           projects={[
             {
@@ -86,19 +86,19 @@ function PageTesting() {
             },
           ]}
         />
-      </section>
+      </section> */}
 
 
 
 
 
       {/* EXPERIENCE */}
-      <section className="space-y-6 m-4 md:m-12 mb-10 md:mb-20">
+      {/* <section className="space-y-6 m-4 md:m-12 mb-10 md:mb-20">
         <h2 className="text-2xl md:text-3xl font-bold mb-8">Experiencia Profesional</h2>
 
 
         <p>Proximamente...</p>
-        {/* <Experience
+        <Experience
           title="Senior Full Stack Developer"
           company="TechCorp"
           period="2021 – Presente"
@@ -109,8 +109,8 @@ function PageTesting() {
             "Automatización de pipelines CI/CD",
             "Mentoría a desarrolladores junior y mid",
           ]}
-        /> */}
-      </section>
+        />
+      </section> */}
 
     </div>
   )

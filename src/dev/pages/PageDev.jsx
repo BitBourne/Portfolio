@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-import { useNavigate } from "react-router-dom"
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import StackCard from "@/components/ui/StackCard"
@@ -14,7 +13,6 @@ import {
 } from "lucide-react"
 
 export default function PageDev() {
-  const navigate = useNavigate()
 
   /* ---------------- CODE TYPING EFFECT ---------------- */
   const [typedCode, setTypedCode] = useState("")
@@ -88,11 +86,8 @@ export default function PageDev() {
             <CardHeader>
               <CardTitle className="flex gap-2 items-center text-base sm:text-lg">
                 <Code2 className="h-5 w-5" />
-                Código en vivo
+                Fibonacci
               </CardTitle>
-              <CardDescription className="text-sm">
-                Simulación de escritura
-              </CardDescription>
             </CardHeader>
 
             <CardContent>
@@ -189,7 +184,7 @@ export default function PageDev() {
               title: "VitaLink - Sistema de Gestión de Citas Médicas",
               description:
                 "Plataforma integral para la gestión de citas médicas que conecta pacientes con profesionales de la salud. Incluye agenda, historiales, recordatorios y pagos.",
-              tags: ["Cypress"],
+              tags: ["React", "TailwindCSS", "Node.js", "Express", "MySQL"],
               link: "https://github.com/BitBourne/VitaLink",
             },
           ]}
@@ -204,7 +199,7 @@ export default function PageDev() {
           title="Full Stack Developer - Practicante"
           company="AXEN IT Consulting"
           period="Enero 2025 - Junio 2025"
-          tags={[".Net", "MongoDB", "C#", "Scrum", "DevOps", "Git", "MudBlazor", "MAUI"]}
+          tags={[".Net ", "MongoDB", "C#", "Scrum", "Azure DevOps", "Git", "MudBlazor", "MAUI"]}
           bullets={[
             "Desarrollo de aplicaciones web escalables y seguras",
             "Participación en el desarrollo backend y frontend del sistema.",
@@ -214,6 +209,7 @@ export default function PageDev() {
           ]}
         />
       </section>
+
 
     </div>
   )

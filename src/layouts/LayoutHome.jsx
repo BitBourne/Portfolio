@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-import ScrollIndicator from "@/components/ui/scrollIndicator";
 
 const LayoutHome = () => {
 
@@ -8,7 +7,6 @@ const LayoutHome = () => {
       <main className="w-11/12 max-w-6xl">
 
         <Outlet />
-        <ScrollIndicator />
 
       </main>
     </div>
